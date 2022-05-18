@@ -29,7 +29,24 @@ public class ListMonoidTests
 
         foreach (var monoid in listMonoids)
         {
-            Assert.Equal<IEnumerable<int>>(monoid, monoid.AsList().AsListMonoid());
+            Assert.Equal(monoid, monoid.AsList().AsListMonoid());
+        }
+    }
+
+    [Fact]
+    public void EmptyIsEmpty()
+    {
+        var empty = ListMonoid<int>.Empty();
+
+        var monoids = new List<ListMonoid<int>> {
+            new List<int> { }.AsListMonoid(),
+            new List<int> { 1, 2, 3 }.AsListMonoid()
+        };
+
+        foreach (var monoid in monoids)
+        {
+            Assert.Equal(empty.Append(monoid), monoid);
+            Assert.Equal(monoid.Append(empty), monoid);
         }
     }
 }
