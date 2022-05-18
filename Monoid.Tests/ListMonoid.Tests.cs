@@ -61,6 +61,19 @@ public class ListMonoidTests
             left.Append(middle.Append(right)),
             left.Append(middle).Append(right)
         );
+    }
 
+    [Fact]
+    public void AppendSeveralListMonoid()
+    {
+        var m1 = new List<int> { 1, 2, 3 }.AsListMonoid();
+        var m2 = new List<int> { }.AsListMonoid();
+        var m3 = new List<int> { 4 }.AsListMonoid();
+        var m4 = new List<int> { 5, 6 }.AsListMonoid();
+
+        Assert.Equal(
+            m1.Append(m2).Append(m3).Append(m4),
+            new List<int> { 1, 2, 3, 4, 5, 6 }.AsListMonoid()
+        );
     }
 }
