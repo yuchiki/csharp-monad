@@ -1,7 +1,6 @@
 ﻿namespace Monoid;
-public interface Monoid<T>
+public interface IMonoid<T>
 {
-    public static T Empty { get; }
-
-    public static T Append(this T self, T value);
+    public static abstract T Empty();
+    public abstract T Append(T value);
 }

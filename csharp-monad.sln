@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonadLibrary.Tests", "Monad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoid", "Monoid\Monoid.csproj", "{D8257CB6-4CAB-44AE-A58D-28331BE3843F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoid.Tests", "Monoid.Tests\Monoid.Tests.csproj", "{931C58FD-EB3C-4631-A244-B70A933A4429}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{D8257CB6-4CAB-44AE-A58D-28331BE3843F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8257CB6-4CAB-44AE-A58D-28331BE3843F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8257CB6-4CAB-44AE-A58D-28331BE3843F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{931C58FD-EB3C-4631-A244-B70A933A4429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{931C58FD-EB3C-4631-A244-B70A933A4429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{931C58FD-EB3C-4631-A244-B70A933A4429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{931C58FD-EB3C-4631-A244-B70A933A4429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
