@@ -22,7 +22,7 @@ public sealed record ListMonoid<T>(
         (other is not null) && this.SequenceEqual(other);
 
     public override int GetHashCode() =>
-        Enumerable.Aggregate(0, (x, y) => x ^ y.GetHashCode());
+        Enumerable.Aggregate(0, (x, y) => (y is null) ? x : x ^ y.GetHashCode());
 
 }
 

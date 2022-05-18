@@ -1,5 +1,5 @@
 namespace MonadLibrary;
 static class ExceptionUtil
 {
-    public static InvalidOperationException Unreachable() => new InvalidOperationException("unreachable");
+    public static InvalidOperationException Unreachable() => new("unreachable");
 }
