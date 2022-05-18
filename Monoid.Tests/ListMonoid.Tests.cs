@@ -49,4 +49,18 @@ public class ListMonoidTests
             Assert.Equal(monoid.Append(empty), monoid);
         }
     }
+
+    [Fact]
+    public void Associativity()
+    {
+        var left = new List<int> { 1, 2, 3 }.AsListMonoid();
+        var middle = new List<int> { 4, 5, 6 }.AsListMonoid();
+        var right = new List<int> { 7, 8, 9 }.AsListMonoid();
+
+        Assert.Equal(
+            left.Append(middle.Append(right)),
+            left.Append(middle).Append(right)
+        );
+
+    }
 }
