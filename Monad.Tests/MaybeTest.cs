@@ -62,7 +62,7 @@ public class MaybeTest
     }
 
     [Fact]
-    public void ReturnsJustWhenAllInputsAreJust()
+    public void QuerySyntaxReturnsJustWhenAllInputsAreJust()
     {
         var ma = new Just<int>(1);
         var mb = new Just<int>(2);
@@ -79,7 +79,7 @@ public class MaybeTest
 
 
     [Fact]
-    public void ReturnsNothingWhenSomeInputsAreNothing()
+    public void QuerySyntaxReturnsNothingWhenSomeInputsAreNothing()
     {
         var ma = new Just<int>(1);
         var mb = new Just<int>(2);

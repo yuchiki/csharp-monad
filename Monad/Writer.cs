@@ -4,7 +4,7 @@ namespace Monad;
 public record Writer<W, T>(W Log, T Value)
     where W : IMonoid<W>;
 
-public static class WriterExtension
+public static class WriterImplementation
 {
     public static Writer<W, T> Return<W, T>(T value)
         where W : IMonoid<W>
