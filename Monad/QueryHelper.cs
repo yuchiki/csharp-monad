@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace MonadLibrary;
+namespace Monad;
 
 static class QueryHelper
 {

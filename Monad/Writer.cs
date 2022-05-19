@@ -1,5 +1,5 @@
 using Monoid;
-namespace Writer;
+namespace Monad;
 
 public record Writer<W, T>(W Log, T Value)
     where W : IMonoid<W>;

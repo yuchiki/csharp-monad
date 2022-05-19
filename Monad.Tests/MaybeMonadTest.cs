@@ -1,10 +1,10 @@
 using Xunit;
 
-namespace MonadLibrary.Tests;
+namespace Monad.Tests;
 
 using static MaybeImplementation;
 
-public class MonadLibraryTest
+public class MaybeTest
 {
     [Fact]
     public void SatisfyMonadLawOne()

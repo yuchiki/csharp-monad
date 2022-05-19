@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MonadLibrary\MonadLibrary.csproj" />
+    <ProjectReference Include="..\Monad\Monad.csproj" />
   </ItemGroup>
 
 </Project>

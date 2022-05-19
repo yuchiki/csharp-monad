@@ -1,4 +1,4 @@
-﻿namespace MonadLibrary;
+﻿namespace Monad;
 using static ExceptionUtil;
 
 public abstract record Maybe<T>();
